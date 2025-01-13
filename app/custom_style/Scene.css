@@ -1,0 +1,83 @@
+/* @font-face {
+  font-family: "Zooxel";
+  src: url("../font/Zooxel_v2_Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Zooxel-B";
+  src: url("../font/Zooxel_v2_Bold.ttf") format("truetype");
+} */
+
+/* body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+} */
+
+/* #videoContainer {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+} */
+
+#videoContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* Responsive button styles */
+.btn_custom {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+
+  font-family: "Zooxel-B", cursive;
+  background-color: rgba(100, 100, 100, 0.9); /* Dark gray */
+  color: #ffffff; /* White text */
+  font-size: 15px; /* Default font size */
+  padding: 15px 30px; /* Default padding */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Soft glow effect */
+
+  animation: backgroundAnimation 5s linear infinite alternate;
+}
+
+.btn_custom:hover {
+  background-color: rgba(170, 170, 170, 1); /* Light gray on hover */
+  transform: scale(1.05);
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-color: rgb(46, 45, 45);
+  }
+
+  100% {
+    background-color: rgb(129, 129, 131);
+  }
+}
+
+#muteButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}

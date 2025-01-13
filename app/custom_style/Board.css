@@ -1,0 +1,95 @@
+.card {
+  perspective: 1000px;
+}
+
+.card .inner-card {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card-flipped .inner-card {
+  transform: rotateY(180deg);
+}
+
+.card .inner-card > * {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+.card .inner-card .back {
+  transform: rotateY(180deg);
+}
+
+.card .inner-card > .front,
+.card .inner-card > .back {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease 0.3s; /* Opacity muncul setelah kartu berbalik */
+  opacity: 0;
+}
+
+.card-flipped .inner-card > .front {
+  opacity: 1; /* Munculkan gambar depan setelah kartu terbalik */
+}
+
+.card-flipped .inner-card > .back {
+  opacity: 0; /* Sembunyikan gambar belakang setelah kartu terbalik */
+}
+
+.inner-card-background {
+  background-image: url("/images/card.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* width: 100%;
+  height: 100%; */
+}
+
+.main-menu-button {
+  color: black; /* Black text */
+  font-family: "Zooxel-B";
+  font-size: 25px; /* Adjust font size as needed */
+  padding: 10px 20px; /* Padding for a better appearance */
+  border-radius: 20px; /* Make the button slightly oval */
+  border: 2px solid black; /* Add a black border with a thickness of 2px */
+  /* cursor: not-allowed; Change cursor to indicate it's disabled */
+  /* pointer-events: none; Prevent any clicking */
+  text-transform: uppercase; /* Optional: Make the text uppercase */
+}
+
+.main-menu-button-color-1 {
+  background-color: rgb(0, 228, 0); /* Green background */
+}
+.main-menu-button-color-2 {
+  background-color: yellow; /* Yellow background */
+}
+.main-menu-button-color-3 {
+  background-color: rgb(255, 100, 100); /* Red background */
+}
+
+/* Efek sparkle */
+.sparkle-effect {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/Sparkle.webp"); /* Gunakan GIF sparkle */
+  background-size: cover;
+  z-index: 1;
+  pointer-events: none;
+  animation: sparkle-fade 5s ease-out;
+}
+
+@keyframes sparkle-fade {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}

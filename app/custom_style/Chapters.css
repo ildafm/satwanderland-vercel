@@ -1,0 +1,33 @@
+/* html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+} */
+
+#bodychapter1 {
+  background-image: url("/images/bgpagi.png");
+  background-size: cover; /* Ensures the background image covers the whole screen */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  width: 100%;
+  height: 100vh;
+}
+
+#bodychapter2 {
+  background-image: url("/images/bgsiang.png");
+  background-size: cover; /* Ensures the background image covers the whole screen */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  width: 100%;
+  height: 100vh;
+}
+
+#bodychapter3 {
+  background-image: url("/images/bgsore.png");
+  background-size: cover; /* Ensures the background image covers the whole screen */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  width: 100%;
+  height: 100vh;
+}

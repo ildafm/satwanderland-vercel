@@ -1,0 +1,5 @@
+.btn-disabled {
+  cursor: not-allowed; /* Menampilkan cursor sebagai tanda tidak bisa diklik */
+  pointer-events: none; /* Menonaktifkan interaksi dengan elemen (tidak bisa diklik) */
+  opacity: 0.5; /* Memberikan efek buram pada tombol */
+}

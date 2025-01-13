@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Zooxel";
+  src: url("../fonts/Zooxel_v2_Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Zooxel-B";
+  src: url("../fonts/Zooxel_v2_Bold.ttf") format("truetype");
+}
+
+* {
+  font-family: Zooxel;
+}

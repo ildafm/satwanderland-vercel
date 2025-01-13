@@ -1,0 +1,12 @@
+.kali-coba {
+  background-color: white; /* White background */
+  color: black; /* Black text */
+  font-family: "Zooxel-B";
+  font-size: 25px; /* Adjust font size as needed */
+  padding: 10px 20px; /* Padding for a better appearance */
+  border: 2px solid black; /* Add a black border with a thickness of 2px */
+  border-radius: 20px; /* Make the button slightly oval */
+  cursor: not-allowed; /* Change cursor to indicate it's disabled */
+  pointer-events: none; /* Prevent any clicking */
+  text-transform: uppercase; /* Optional: Make the text uppercase */
+}
